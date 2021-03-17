@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>awsl微信支付</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/qrcode.min.js"></script>
+    <style>
+        .div{
+            margin:0 auto;
+            width:200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<p style="text-align: center">打开手机微信扫一扫继续付款</p>
+<div style="margin:0 auto;width:200px;height: 200px;" id="qrcode"></div>
+<script type="text/javascript">
+    function GetQueryValue1(queryName) {
+        var reg = new RegExp("(^|&)" + queryName + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if ( r != null ){
+            return decodeURI(r[2]);
+        }else{
+            return null;
+        }
+    }
+    var queryVal=GetQueryValue1('code_url');
+    console.log(queryVal);
+    new QRCode(document.getElementById("qrcode"), queryVal);  // 设置要生成二维码的链接
+</script>
+</body>
+</html>

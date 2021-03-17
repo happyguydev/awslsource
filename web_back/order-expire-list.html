@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面-X-admin2.2</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/xadmin.css">
+    <script src="./lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/xadmin.js"></script>
+</head>
+
+<body>
+<div class="x-nav">
+            <span class="layui-breadcrumb">
+                <a href="">首页</a>
+                <a href="">订单管理</a>
+                <a><cite>订单过期列表</cite></a>
+            </span>
+    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+        <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
+    </a>
+</div>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body ">
+                    <form class="layui-form layui-col-space5">
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <input class="layui-input" placeholder="开始日" name="start" id="start"></div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <input class="layui-input" placeholder="截止日" name="end" id="end"></div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <select name="contrller">
+                                <option value="">支付方式</option>
+                                <option value="ali">支付宝</option>
+                                <option value="wx">微信</option>
+                                <option value="paypal">PayPal</option></select>
+                        </div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <input type="text" name="order_number" placeholder="请输入订单号" autocomplete="off" class="layui-input"></div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <input type="text" name="username" placeholder="请输入用户名" autocomplete="off" class="layui-input"></div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <button type="button" class="layui-btn" lay-submit="" lay-filter="sreach">
+                                <i class="layui-icon">&#xe615;</i></button>
+                        </div>
+                    </form>
+                </div>
+                <!--                        <div class="layui-card-header">-->
+                <!--                            <button class="layui-btn layui-btn-danger" onclick="delAll()">-->
+                <!--                                <i class="layui-icon"></i>批量删除</button>-->
+                <!--                            <button class="layui-btn" onclick="xadmin.open('添加用户','./order-add.html',800,600)">-->
+                <!--                                <i class="layui-icon"></i>添加</button></div>-->
+                <div class="layui-card-body ">
+                    <table class="layui-hide" id="test"></table>
+                    <!--                            <table class="layui-table layui-form">-->
+                    <!--                                <thead>-->
+                    <!--                                    <tr>-->
+                    <!--                                        <th>-->
+                    <!--                                            <input type="checkbox" name="" lay-skin="primary">-->
+                    <!--                                        </th>-->
+                    <!--                                        <th>订单编号</th>-->
+                    <!--                                        <th>收货人</th>-->
+                    <!--                                        <th>总金额</th>-->
+                    <!--                                        <th>应付金额</th>-->
+                    <!--                                        <th>订单状态</th>-->
+                    <!--                                        <th>支付状态</th>-->
+                    <!--                                        <th>发货状态</th>-->
+                    <!--                                        <th>支付方式</th>-->
+                    <!--                                        <th>配送方式</th>-->
+                    <!--                                        <th>下单时间</th>-->
+                    <!--                                        <th>操作</th></tr>-->
+                    <!--                                </thead>-->
+                    <!--                                <tbody>-->
+                    <!--                                    <tr>-->
+                    <!--                                        <td>-->
+                    <!--                                            <input type="checkbox" name="" lay-skin="primary"></td>-->
+                    <!--                                        <td>2017009171822298053</td>-->
+                    <!--                                        <td>老王:18925139194</td>-->
+                    <!--                                        <td>7829.10</td>-->
+                    <!--                                        <td>7854.10</td>-->
+                    <!--                                        <td>待确认</td>-->
+                    <!--                                        <td>未支付</td>-->
+                    <!--                                        <td>未发货</td>-->
+                    <!--                                        <td>其他方式</td>-->
+                    <!--                                        <td>申通物流</td>-->
+                    <!--                                        <td>2017-08-17 18:22</td>-->
+                    <!--                                        <td class="td-manage">-->
+                    <!--                                            <a title="查看" onclick="xadmin.open('编辑','order-view.html')" href="javascript:;">-->
+                    <!--                                                <i class="layui-icon">&#xe63c;</i></a>-->
+                    <!--                                            <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">-->
+                    <!--                                                <i class="layui-icon">&#xe640;</i></a>-->
+                    <!--                                        </td>-->
+                    <!--                                    </tr>-->
+                    <!--                                    <tr>-->
+                    <!--                                        <td>-->
+                    <!--                                            <input type="checkbox" name="" lay-skin="primary"></td>-->
+                    <!--                                        <td>2017009171822298053</td>-->
+                    <!--                                        <td>老王:18925139194</td>-->
+                    <!--                                        <td>7829.10</td>-->
+                    <!--                                        <td>7854.10</td>-->
+                    <!--                                        <td>待确认</td>-->
+                    <!--                                        <td>未支付</td>-->
+                    <!--                                        <td>未发货</td>-->
+                    <!--                                        <td>其他方式</td>-->
+                    <!--                                        <td>申通物流</td>-->
+                    <!--                                        <td>2017-08-17 18:22</td>-->
+                    <!--                                        <td class="td-manage">-->
+                    <!--                                            <a title="查看" onclick="xadmin.open('编辑','order-view.html')" href="javascript:;">-->
+                    <!--                                                <i class="layui-icon">&#xe63c;</i></a>-->
+                    <!--                                            <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">-->
+                    <!--                                                <i class="layui-icon">&#xe640;</i></a>-->
+                    <!--                                        </td>-->
+                    <!--                                    </tr>-->
+                    <!--                                    <tr>-->
+                    <!--                                        <td>-->
+                    <!--                                            <input type="checkbox" name="" lay-skin="primary"></td>-->
+                    <!--                                        <td>2017009171822298053</td>-->
+                    <!--                                        <td>老王:18925139194</td>-->
+                    <!--                                        <td>7829.10</td>-->
+                    <!--                                        <td>7854.10</td>-->
+                    <!--                                        <td>待确认</td>-->
+                    <!--                                        <td>未支付</td>-->
+                    <!--                                        <td>未发货</td>-->
+                    <!--                                        <td>其他方式</td>-->
+                    <!--                                        <td>申通物流</td>-->
+                    <!--                                        <td>2017-08-17 18:22</td>-->
+                    <!--                                        <td class="td-manage">-->
+                    <!--                                            <a title="查看" onclick="xadmin.open('编辑','order-view.html')" href="javascript:;">-->
+                    <!--                                                <i class="layui-icon">&#xe63c;</i></a>-->
+                    <!--                                            <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">-->
+                    <!--                                                <i class="layui-icon">&#xe640;</i></a>-->
+                    <!--                                        </td>-->
+                    <!--                                    </tr>-->
+                    <!--                                </tbody>-->
+                    <!--                            </table>-->
+                </div>
+                <!--                        <div class="layui-card-body ">-->
+                <!--                            <div class="page">-->
+                <!--                                <div>-->
+                <!--                                    <a class="prev" href="">&lt;&lt;</a>-->
+                <!--                                    <a class="num" href="">1</a>-->
+                <!--                                    <span class="current">2</span>-->
+                <!--                                    <a class="num" href="">3</a>-->
+                <!--                                    <a class="num" href="">489</a>-->
+                <!--                                    <a class="next" href="">&gt;&gt;</a></div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var cate = layui.sessionData('token');
+    if(typeof(cate.data) == "undefined"){
+        location.href='login.html'
+    }
+    layui.use(['laydate', 'form', 'table'], function() {
+        var laydate = layui.laydate;
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#start' //指定元素
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#end' //指定元素
+        });
+
+        var table = layui.table;
+        table.render({
+            elem: '#test'
+            ,method:'post'
+            ,url:xadmin.base_url + 'price_expires'
+            ,page: true
+            ,limits: [10, 20, 30, 40, 50]
+            ,limit: 10
+            ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+            ,where:{'start':'','end':'','username':'','pay_way':'','order_number':'', 'token':cate.data[0]['token']}
+            ,cols: [[
+                {field:'id', title: 'ID', sort: true}
+                ,{field:'order_number', title: '订单号'}
+                ,{field:'username', title: '用户名'} //width 支持：数字、百分比和不填写。你还可以通过 minWidth 参数局部定义当前单元格的最小宽度，layui 2.2.1 新增
+                ,{field:'pay_price', title: '支付金额'}
+                ,{field:'pay_way', title: '支付方式', templet: function (d) {
+                        if (d.pay_way=='ali'){
+                            return '支付宝'
+                        }else if(d.pay_way=='wx'){
+                            return '微信'
+                        }else if(d.pay_way=='paypal'){
+                            return 'PayPal'
+                        }
+                    }}
+                ,{field:'status', title:'支付结果',templet: function (d) {
+                        if (d.status==0){
+                            return '未支付'
+                        }else if(d.status==1){
+                            return  '支付成功'
+                        }
+                    }}
+                ,{field:'pay_time', title: '操作时间', templet: function (d) {
+                        if (d.pay_time){
+                            return ''+layui.util.toDateString(d.pay_time*1000, 'yyyy-MM-dd HH:mm:ss')+'';
+                        }else {
+                            return ''
+                        }
+                    }}
+                ,{field:'trade_no', title: '交易单号'}
+                ,{field:'expire_time', title: '过期时间', templet: function (d) {
+                    if (d.expire_time){
+                        return ''+layui.util.toDateString(d.expire_time*1000, 'yyyy-MM-dd HH:mm:ss')+'';
+                    }else {
+                        return ''
+                    }
+                }}
+            ]]
+        });
+
+        var form = layui.form;
+        form.on('submit(sreach)', function(data){
+            // console.log(data.elem) //被执行事件的元素DOM对象，一般为button对象
+            // console.log(data.form) //被执行提交的form对象，一般在存在form标签时才会返回
+            console.log(data.field) //当前容器的全部表单字段，名值对形式：{name: value}
+
+            table.reload('test',{
+                method:'post'
+                ,url:xadmin.base_url + 'price_expires'
+                ,page: true
+                ,limits: [10, 20, 30, 40, 50]
+                ,limit: 10
+                ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+                ,where:{'start':data.field['start'],'end':data.field['end'],'username':data.field['username'],'pay_way':data.field['contrller'],'order_number':data.field['order_number'],'token':cate.data[0]['token']}
+                ,cols: [[
+                    {field:'id', title: 'ID', sort: true}
+                    ,{field:'order_number', title: '订单号'}
+                    ,{field:'username', title: '用户名'} //width 支持：数字、百分比和不填写。你还可以通过 minWidth 参数局部定义当前单元格的最小宽度，layui 2.2.1 新增
+                    ,{field:'pay_price', title: '支付金额'}
+                    ,{field:'pay_way', title: '支付方式', templet: function (d) {
+                            if (d.pay_way=='ali'){
+                                return '支付宝'
+                            }else if(d.pay_way=='wx'){
+                                return '微信'
+                            }else if(d.pay_way=='paypal'){
+                                return 'PayPal'
+                            }
+                        }}
+                    ,{field:'status', title:'支付结果',templet: function (d) {
+                            if (d.status==0){
+                                return '未支付'
+                            }else if(d.status==1){
+                                return  '支付成功'
+                            }
+                        }}
+                    ,{field:'pay_time', title: '操作时间', templet: function (d) {
+                            if (d.pay_time){
+                                return ''+layui.util.toDateString(d.pay_time*1000, 'yyyy-MM-dd HH:mm:ss')+'';
+                            }else {
+                                return ''
+                            }
+                        }}
+                    ,{field:'trade_no', title: '交易单号'}
+                    ,{field:'expire_time', title: '过期时间', templet: function (d) {
+                            if (d.expire_time){
+                                return ''+layui.util.toDateString(d.expire_time*1000, 'yyyy-MM-dd HH:mm:ss')+'';
+                            }else {
+                                return ''
+                            }
+                        }}
+                ]]
+            })
+            // return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+        });
+
+        //监听单元格编辑
+        table.on('edit(test)', function(obj) {
+            var value = obj.value //得到修改后的值
+                ,
+                data = obj.data //得到所在行所有键值
+                ,
+                field = obj.field; //得到字段
+            layer.msg('[ID: ' + data.id + '] ' + field + ' 字段更改为：' + value);
+        });
+
+        //头工具栏事件
+        table.on('toolbar(test)', function(obj) {
+            var checkStatus = table.checkStatus(obj.config.id);
+            switch (obj.event) {
+                case 'getCheckData':
+                    var data = checkStatus.data;
+                    layer.alert(JSON.stringify(data));
+                    break;
+                case 'getCheckLength':
+                    var data = checkStatus.data;
+                    layer.msg('选中了：' + data.length + ' 个');
+                    break;
+                case 'isAll':
+                    layer.msg(checkStatus.isAll ? '全选': '未全选');
+                    break;
+            };
+        });
+    });
+
+    /*用户-停用*/
+    function member_stop(obj, id) {
+        layer.confirm('确认要停用吗？',
+            function(index) {
+
+                if ($(obj).attr('title') == '启用') {
+
+                    //发异步把用户状态进行更改
+                    $(obj).attr('title', '停用');
+                    $(obj).find('i').html('&#xe62f;');
+
+                    $(obj).parents("tr").find(".td-status").find('span').addClass('layui-btn-disabled').html('已停用');
+                    layer.msg('已停用!', {
+                        icon: 5,
+                        time: 1000
+                    });
+
+                } else {
+                    $(obj).attr('title', '启用');
+                    $(obj).find('i').html('&#xe601;');
+
+                    $(obj).parents("tr").find(".td-status").find('span').removeClass('layui-btn-disabled').html('已启用');
+                    layer.msg('已启用!', {
+                        icon: 5,
+                        time: 1000
+                    });
+                }
+
+            });
+    }
+
+    /*用户-删除*/
+    function member_del(obj, id) {
+        layer.confirm('确认要删除吗？',
+            function(index) {
+                //发异步删除数据
+                $(obj).parents("tr").remove();
+                layer.msg('已删除!', {
+                    icon: 1,
+                    time: 1000
+                });
+            });
+    }
+
+    function delAll(argument) {
+
+        var data = tableCheck.getData();
+
+        layer.confirm('确认要删除吗？' + data,
+            function(index) {
+                //捉到所有被选中的，发异步进行删除
+                layer.msg('删除成功', {
+                    icon: 1
+                });
+                $(".layui-form-checked").not('.header').parents('tr').remove();
+            });
+    }</script>
+
+</html>

@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AWSL SEO-个人中心</title>
+    <meta name="Keywords" content="awsl seo,seo,seo排名工具,seo软件,google seo,seo优化,百度排名,网站优化,사이트 순위,seoul,seoul weather,seoulstore,seo tool" />
+    <meta name="baidu-site-verification" content="C94tf5fxM1" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js" ></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script src="js/config.js"></script>
+    <script src="https://hm.baidu.com/hm.js?ca622a8a75f27a017a6a60ec0223faa6"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ca622a8a75f27a017a6a60ec0223faa6";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170913398-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-170913398-1');
+    </script>
+    <style>
+        .bgg{
+            border: 1px solid #0186e4;
+            width: 210px;
+            margin-left: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .bbgg{
+            background-color: #0186e4;
+        }
+        .bbgg1{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<div style="float: right">
+    <button class="translate" id="en">English</button>
+    <button class="translate" id="zh">中文</button>
+</div>
+<!--header-->
+<div class="headerWrap">
+    <div class="header w1200 cleafix">
+        <!--logo-->
+        <div class="logo fl"><a href="index.html"><img src="img/logo11.png"></a></div>
+        <!--nav-->
+        <div class="nav fr">
+            <ul>
+                <li><a class="lang" key="INDEX" href="index.html">首页</a></li>
+                <li><a class="lang" key="DOWNLOAD" href="download.html">下载中心</a></li>
+                <li><a class="lang" key="HELP" href="help.html">帮助中心</a></li>
+                <li class="cur"><a class="lang" key="PERSONAL" href="personal.html">个人中心</a></li>
+
+                <!--<li><a href="profile.html">公司简介</a></li>-->
+                <!--<li><a href="business.html">业务范围</a></li>-->
+                <!--<li><a href="case.html">典型案例</a></li>-->
+                <!--<li><a href="news.html">公司新闻</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--banner-->
+<div class="slideBox">
+    <div class="bd">
+        <ul>
+            <li>
+                <div class="slideImg"><a href="#"><img src="temp/banner4.jpg" /></a></div>
+                <div class="slideText w1200">
+                    <h2>我们用良心丈量自己的产品</h2>
+                    <p>我们始终相信，优秀的产品是企业的生命力所在，我们不遗余力的为之努力奋斗，做属于自己的<br />精品产品，不浮躁，不骄傲。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--页面主体部分-->
+<div class="mainCaseWrap">
+    <div class="mainCase w1200">
+        <div id="login_register" style="display: block">
+            <div class="caseTitle">
+                <h2><soan class="lang" key="Y-C-L">您当前所在位置</soan>：<span class="lang" key="PERSONAL">个人中心</span>-<span class="lang" key="L-R">登录注册</span></h2>
+            </div>
+            <div class="business cleafix">
+                <div id="login" style="width: 100%;margin: 0 auto;text-align: center;display: block">
+                    <a class="lang" key="REGISTER" style="cursor: pointer;color:#0296ff;float: left" onclick="toregister()">没有账号？去注册</a>
+                    <br>
+                    <h2><label class="lang" key="ACCOUNT" style="font-size: 20px">账号：</label>
+                        <input class="lang" key="ACCOUNT TEXT" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="text" name="username" placeholder="请输入账号"/></h2>
+                    <br>
+                    <h2><label class="lang" key="PASSWORD" style="font-size: 20px">密码：</label>
+                        <input class="lang" key="PASSWORD PWD" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="password" name="pwd" placeholder="请输入密码"/></h2>
+                    <br>
+                    <h3><input class="lang" key="SIGN IN" style="font-size: 20px; background: #0296ff;width: 105px;height: 38px;border: 1px solid #0296ff;border-radius: 50px;text-align: center;color: #fff;cursor: pointer;"
+                               type="button" value="登录" onclick="login()"/></h3>
+
+                </div>
+                <div id="register" style="width: 100%;margin: 0 auto;text-align: center;display: none">
+                    <a class="lang" key="LOGIN" style="cursor: pointer;color:#0296ff;float: left;" onclick="tologin()">已有账号？去登录</a>
+                    <br>
+                    <h2><label class="lang" key="ACCOUNT" style="font-size: 20px">账号：</label>
+                        <input class="lang" key="ACCOUNT TEXT" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="text" name="username1" placeholder="请输入账号"/></h2>
+                    <br>
+                    <h2><label class="lang" key="PASSWORD" style="font-size: 20px">密码：</label>
+                        <input class="lang" key="PASSWORD PWD" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="password" name="pwd1" placeholder="请输入密码"/></h2>
+                    <br>
+                    <h2><label class="lang" key="CONFIRM PASSWORD" style="font-size: 20px;margin-left: -40px;">确认密码：</label>
+                        <input class="lang" key="PASSWORD0 PWD" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="password" name="pwd2" placeholder="请输入确认密码"/></h2>
+                    <br>
+                    <h2><label class="lang" key="EMAIL1" style="font-size: 20px;margin-left: -10px;">邮箱：</label>
+                        <input class="lang" key="EMAIL TEXT" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="text" name="email" placeholder="请输入邮箱"/></h2>
+                    <br>
+                    <h3><input class="lang" key="REGISTER BTN" style="font-size: 20px; background: #0296ff;width: 105px;height: 38px;border: 1px solid #0296ff;border-radius: 50px;text-align: center;color: #fff;cursor: pointer;"
+                               type="button" value="注册" onclick="register()"/></h3>
+
+                </div>
+            </div>
+        </div>
+        <div id="user_center">
+            <div class="caseTitle">
+                <h2><soan class="lang" key="Y-C-L">您当前所在位置</soan>：<span class="lang" key="PERSONAL">个人中心</span>-<span  class="lang" key="RECHARGE RECORD" id="mmenu">充值记录</span>
+                    <div style="float: right">
+                        <span id="uusername"></span>
+                        <a class="lang" key="SIGN OUT" style="cursor: pointer;color: #0296ff;margin-left: 10px" onclick="quit()">退出</a>
+                    </div>
+                </h2>
+            </div>
+            <div class="business cleafix">
+                <div class="businessL fl">
+                    <h2 class="lang" key="PERSONAL">个人中心</h2>
+                    <div class="businessLMain">
+                        <h3 class="cur"><a class="lang" key="RECHARGE RECORD" href="javascript:;" onclick="order_reocrd1()">充值记录</a></h3>
+                        <h3><a class="lang" key="MEMBER RECHARGE" href="javascript:;" onclick="recharge1()">会员充值</a></h3>
+                        <h3><a class="lang" key="MODIFY PASSWORD" href="javascript:;" onclick="modifypwd1()">修改密码</a></h3>
+                        <h3><a class="lang" key="MODIFY EMAIL" href="javascript:;" onclick="modifyemail1()">修改邮箱</a></h3>
+                    </div>
+                </div>
+                <div class="businessR fr">
+                    <div id="order_reocrd" style="display: block;">
+                        <div>
+                            <table>
+                                <tr>
+                                    <td><span class="lang" key="START TIME" style="font-size: 16px">开始时间</span></td>
+                                    <td><input id="start" name="start" type="date" style="border: 1px solid #0296ff; font-size: 16px;border-radius: 10px;margin-left: 10px;"/></td>
+                                    <td><span class="lang" key="END TIME" style="font-size: 16px;margin-left: 10px;">结束时间</span></td>
+                                    <td><input id="end" name="end" type="date" style="border: 1px solid #0296ff; font-size: 16px;border-radius: 10px;margin-left: 10px;"/></td>
+                                    <td><span class="lang" key="PAYMENT METHOD" style="font-size: 16px;margin-left: 10px;">支付方式</span></td>
+                                    <td><select id="pay_way" name="pay_way" style="border: 1px solid #0296ff;font-size: 16px;border-radius: 10px;margin-left: 10px;">
+                                        <option class="lang" key="PAYMENT METHOD" value="支付方式">支付方式</option>
+                                        <option class="lang" key="ALIPAY" value="ali">支付宝</option>
+<!--                                        <option class="lang" key="WECHAT" value="wx">微信</option>-->
+<!--                                        <option class="lang" key="PAYPAL" value="paypal">Paypal</option>-->
+                                    </select></td>
+                                    <td><span class="lang" key="ORDER STATUS" style="font-size: 16px;margin-left: 10px;">订单状态</span></td>
+                                    <td><select id="status" name="status" style="border: 1px solid #0296ff;font-size: 16px;border-radius: 10px;margin-left: 10px;">
+                                        <option class="lang" key="ORDER STATUS" value="订单状态">订单状态</option>
+                                        <option class="lang" key="UNPAID" value="0">未支付</option>
+                                        <option class="lang" key="PAID" value="1">已支付</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="lang" key="ORDER NUMBER" style="font-size: 16px">订单号</span></td>
+                                    <td><input id="ordernumber" name="ordernumber" type="text" style="border: 1px solid #0296ff; font-size: 16px;border-radius: 10px;margin-left: 10px;"/></td>
+                                    <td><a class="lang" key="SEARCH" style="height: 25px;line-height: 25px;padding: 0 11px;background: #0296ff;border: 1px #0296ff solid;border-radius: 20px;display: inline-block;font-size: 16px;outline: none;cursor: pointer;margin-left: 10px;" onclick="ssearch()">查询</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table style="border: 1px solid #e8e8e8;border-collapse:collapse;font-size: 14px;width: 100%;margin-top: 10px " cellpadding="0" id="order-data">
+                        </table>
+                        <!--分页-->
+                        <div class="mainC1">
+                            <h3 id="page-set">
+                                <a class="next" href="javascript:;">&lt;</a>
+<!--                                <a class="cur" href="javascript:;">1</a>-->
+<!--                                <a href="javascript:;">2</a>-->
+<!--                                <a href="javascript:;">3</a>-->
+<!--                                <a href="javascript:;">4</a>-->
+                                <a class="next" href="javascript:;">&gt;</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="recharge" style="display: none;">
+                        <div style="display: inline-flex" id="price-list">
+                            <div class="bgg bbgg" onclick="setprice('10.00')">
+                                <div style="text-align: center;font-size: 18px">标准会员</div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;">
+                                    <span>￥10.00</span>
+                                    <span>元/30天</span>
+                                </div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;"><span>功能：</span>
+                                </div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;">
+                                    <span>每天可以调用IP</span><span>2000</span><span>个</span>
+                                </div>
+                            </div>
+                            <div class="bgg bbgg1" onclick="setprice('20.00')">
+                                <div style="text-align: center;font-size: 18px">高级会员</div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;">
+                                    <span>￥20.00</span>
+                                    <span>元/30天</span>
+                                </div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;"><span>功能：</span>
+                                </div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;">
+                                    <span>每天可以调用IP</span><span>5000</span><span>个</span></div>
+                            </div>
+                            <div class="bgg bbgg1" onclick="setprice('30.00')">
+                                <div style="text-align: center;font-size: 18px">专业会员</div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;">
+                                    <span>￥30.00</span>
+                                    <span>元/30天</span>
+                                </div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;"><span>功能：</span>
+                                </div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;">
+                                <span>每天可以调用IP</span><span>10000</span><span>个</span></div>
+                            </div>
+                            <div class="bgg bbgg1" onclick="setprice('40.00')">
+                                <div style="text-align: center;font-size: 18px">VIP会员</div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;">
+                                    <span>￥40.00</span>
+                                    <span>元/30天</span>
+                                </div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;"><span>功能：</span>
+                                </div>
+                                <div style="text-align: center;font-size: 16px;margin-top: 10px;">
+                                    <span>每天可以调用IP</span><span>20000</span><span>个</span></div>
+                            </div>
+                        </div>
+                        <div style="text-align: center;display: inline;">
+                            <p style="font-size: 22px;margin-top: 10px">
+                                <span class="lang" key="PAYABLE">应支付金额：</span>
+                                <input type="radio" id="price1" name="price" value="1" checked>
+                                <span>￥</span>
+                                <span style="color: red;" id="price" price-id="0" pprice="0.00"></span>
+                                <span class="lang" key="YUAN">元</span>
+                                <input type="radio" id="price2" name="price" value="2" style="margin-left: 10px;">
+                                <span id="price22">￥</span>
+                                <span style="color: red;" id="price_quarter" price-id="0" pprice="0.00"></span>
+                                <span id="price222" class="lang" key="YUAN">元</span>
+                                <input type="radio" id="price3" name="price" value="3" style="margin-left: 10px;">
+                                <span id="price33">￥</span>
+                                <span style="color: red;" id="price_half_a_year" price-id="0" pprice="0.00"></span>
+                                <span id="price333" class="lang" key="YUAN">元</span>
+                            </p>
+                        </div>
+                        <div style="width: 665px; margin: 0 auto;text-align: center;">
+<!--                            <div style="float: left">-->
+<!--                                <img id="wx" src="http://vip.cssmoban.com/api/createcode?url=weixin://wxpay/bizpayurl?pr=G84q8i7" alt="" style="display: inline;">-->
+<!--                                <div style="margin-top: 10px;width: 100%;height: 40px;text-align: center;line-height: 40px;background-color: #4BB414;color: #ffffff;font-size: 16px;">-->
+<!--                                    <img src="img/wx-icon.png" alt="" style="margin-top: 7px">微信扫码支付-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <div style="height: 200px; width: 200px;border: 1px solid #0186e4;text-align: center;margin: 0 auto;">
+                                <img src="img/pay-zfb.png" alt="" style="margin-top: 50px">
+                                <span style="display: block;margin-top: 60px;width: 100%;height: 40px;text-align: center;line-height: 40px;background-color: #009FE8;color: #ffffff;font-size: 16px;cursor: pointer;" target="_blank" title="点击跳转支付链接">
+                                    <img src="img/zfb-icon.png" alt="" style="margin-top: 7px">
+                                    <span class="lang" key="JUMP-TO-ALIPAY" onclick="jump_to_alipay()">跳转支付宝</span>
+                                </span>
+                            </div>
+<!--                            <div style="margin-left: 20px;height: 200px; width: 200px;border: 1px solid #0186e4;text-align: center;float: left;">-->
+<!--                                <img src="img/pay-paypal.jpg" alt="" style="margin-top: 40px">-->
+<!--                                <span style="display: block;margin-top: 46px;width: 100%;height: 40px;text-align: center;line-height: 40px;background-color: #009FE8;color: #ffffff;font-size: 16px;cursor: pointer;" target="_blank" title="点击跳转支付链接">-->
+<!--                                    <img src="img/paypal-icon.gif" alt="" style="margin-top: 15px;">跳转PayPal-->
+<!--                                </span>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                    <div id="modifypwd" style="display: none;">
+                        <h2><label class="lang" key="ACCOUNT" style="font-size: 20px;margin-left: -175px;">账号：</label>
+                            <label style="font-size: 20px;" id="usernamem" name="usernamem" ></label></h2>
+                        <br>
+                        <h2><label class="lang" key="PASSWORD1" style="font-size: 20px;margin-left: -10px;">原密码：</label>
+                            <input class="lang" key="PASSWORD1 PWD" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="password" id="pwd-old" name="pwd-old" placeholder="请输入原密码"/></h2>
+                        <br>
+                        <h2><label class="lang" key="PASSWORD2" style="font-size: 20px">新密码：</label>
+                            <input class="lang" key="PASSWORD2 PWD" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="password" id="pwdd" name="pwd" placeholder="请输入新密码"/></h2>
+                        <br>
+                        <h2><label class="lang" key="PASSWORD3" style="font-size: 20px;margin-left: -40px;">确认新密码：</label>
+                            <input class="lang" key="PASSWORD3 PWD" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="password" id="pwdd1" name="pwd1" placeholder="请输入确认新密码"/></h2>
+                        <br>
+                        <h3><input class="lang" key="SAVE" style="font-size: 20px; background: #0296ff;width: 105px;height: 38px;border: 1px solid #0296ff;border-radius: 50px;text-align: center;color: #fff;cursor: pointer;margin-left: 320px"
+                                   type="button" value="保存" onclick="modifypwd()"/></h3>
+                    </div>
+                    <div id="modifyemail" style="display: none;">
+                        <h2><label class="lang" key="ACCOUNT" style="font-size: 20px;margin-left: -175px;">账号：</label>
+                            <label style="font-size: 20px;" id="usernamemm" name="usernamemm"></label></h2>
+                        <br>
+                        <h2><label class="lang" key="EMAIL1" style="font-size: 20px">邮箱：</label>
+                            <input class="lang" key="EMAIL TEXT" style="font-size: 20px;border-bottom: 1px solid #0296ff;" type="text" id="eemail" name="eemail" placeholder="请输入邮箱"/></h2>
+                        <br>
+                        <h3><input class="lang" key="SAVE" style="font-size: 20px; background: #0296ff;width: 105px;height: 38px;border: 1px solid #0296ff;border-radius: 50px;text-align: center;color: #fff;cursor: pointer;margin-left: 320px"
+                                   type="button" value="保存" onclick="modifyemail()"/></h3>
+                    </div>
+    <!--                <p>视频会议系统，又称会议电视系统，是指两个或两个以上不同地方的个人或群体，通过传输线路及多媒体设备，将声音、影像及文件资料互传，实现即时且互动的沟通，以实现会议目的的系统设备。视频会议的使用有点像电话，除了能看到与你通话的人并进行语言交流外，还能看到他们的表情和动作，使处于不同地方的人就像在同一房间内沟通。</p>-->
+    <!--                <p>“视频会议系统&#45;&#45;有时也叫“视频会议”英文为(Video Conference System)，包括软件视频会议系统和硬件视频会议系统，是指两个或两个以上不同地方的个人或群体，通过现有的各种电信通讯传输媒体，将人物的静、动态图像、语音、文字、图片等多种资料分送到各个用户的计算机上，使得在地理上分散的用户可以共聚一处，通过图形、声音等多种方式交流信息，增加双方对内容的理解能力。目前视频会议逐步向着多网协作、高清化、开发化的方向发展着。</p>-->
+    <!--                <p>视频会议作为目前最先进的通讯技术，只需借助互联网，即可实现高效高清的远程会议、办公，在持续提升用户沟通效率、缩减企业差旅费用成本、提高管理成效等方面具有得天独厚的优势，已部分取代商务出行，成为远程办公最新模式。近年来，视频会议的应用范围迅速扩大，从政府、公安、军队、法院到科技、能源、医疗、教育等领域随处可见，涵盖了社会生活的方方面面。据计世资讯最新数据表明2009年国内视频会议市场规模约为43.6亿元，预计到2010年将增长到60亿元。</p>-->
+    <!--                <p>一般的视频会议系统包括MCU多点控制器(视频会议服务器)、会议室终端、PC桌面型终端、电话接入网关(PSTNGateway)、Gatekeeper(网闸)等几个部分。各种不同的终端都连入MCU进行集中交换，组成一个视频会议网络。此外，语音会议系统可以让所有桌面用户通过PC参与语音会议，这些是在视频会议基础上的衍生。目前，语音系统也是多功能视频会议的一个参考条件。</p>-->
+    <!--                <p>MCU是视频会议系统的核心部分，为用户提供群组会议、多组会议的连接服务。目前主流厂商的MCU一般可以提供单机多达64个用户的接入服务，并且可以进行级联，可以基本满足用户的使用要求。MCU的使用和管理不应该太复杂，要使客户方技术部甚至行政部的一般员工能够操作。</p>-->
+    <!--                <p>大中小型会议室终端产品是提供给用户的会议室使用的，设备自带摄像头和遥控键盘，可以通过电视机或者投影仪显示，用户可以根据会场的大小选择不同的设备。一般会议室设备带SONY或CANON的专用摄像头，可以通过遥控方式前后左右转动从而覆盖参加会议的任何人和物。</p>-->
+    <!--                <h2>2016年2月27日</h2>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="introWrap">
+    <div class="introTitle">
+        <h2><em class="lang" key="LINKS">友情链接</em><span></span></h2>
+        <div style="margin:20px 0px 20px; width: 100%;text-align: center;">
+            <ul>
+                <li style="display: inline-block;font-size: 14px;margin-right: 20px"><a target="_blank" href="https://tongji.baidu.com/" class="lang" key="BAIDU STATISTICS">百度统计</a></li>
+                <li style="display: inline-block;font-size: 14px;margin-right: 20px;"><a target="_blank" href="https://analytics.google.com/" class="lang" key="GOOGLE STATISTICS">谷歌统计</a></li>
+                <li style="display: inline-block;font-size: 14px;margin-right: 20px;"><a target="_blank" href="https://website.informer.com/" class="lang" key="WEBSITE STATISTICS">网站统计</a></li>
+                <li style="display: inline-block;font-size: 14px;margin-right: 20px;"><a target="_blank" href="https://gongju.aizhan.com/" class="lang" key="LOVE STATION KIT">爱站工具包</a></li>
+                <li style="display: inline-block;font-size: 14px;margin-right: 20px;"><a target="_blank" href="https://keywordtool.io/" class="lang" key="GOOGLE KEYWORD MINING">Google关键字挖掘</a></li>
+                <li style="display: inline-block;font-size: 14px;margin-right: 20px;"><a target="_blank" href="https://www.alexa.com/" class="lang" key="ALEXA INTERNATIONAL RANKINGS">Alexa国际排名</a></li>
+                <li style="display: inline-block;font-size: 14px;margin-right: 20px;"><a target="_blank" href="http://www.alexa.cn/" class="lang" key="ALEXA CHINA RANKINGS">Alexa中国排名</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footerWrap">
+    <div class="footer w1200 cleafix">
+        <div style="margin:auto">
+            <div class="fooL fl" style="border-right: 0px solid #494848; width: 100%;text-align: center;">
+                <h2><em class="lang" key="CONTACT US">联系我们</em></h2>
+                <h2 class="lang" key="COMPANY">珠海红叶科技发展有限公司</h2>
+                <p><em class="lang" key="CUSTOMER">客服：</em><span id="tel_kefu"></span></p>
+                <p><em class="lang" key="PHONE">电话：</em><span id="phone"></span></p>
+                <p><em class="lang" key="EMAIL">邮箱：</em><span id="email"></span></p>
+                <p><em class="lang" key="WEBSITE">网址：</em>www.awsl58.com</p>
+            </div>
+        </div>
+        <!--        <div class="fooR fr">-->
+        <!--            <h2><label>您的姓名：</label><input type="text" class="fooText" /></h2>-->
+        <!--            <h2><label>联系方式：</label><input type="text" class="fooText" /></h2>-->
+        <!--            <h2><label>留言建议：</label><textarea></textarea></h2>-->
+        <!--            <h3><input type="button" value="提交" /></h3>-->
+        <!--        </div>-->
+    </div>
+    <div class="footerB">Copyright © 2020-2020 <a href="http://www.awsl58.com/" title="awsl58">Reserved</a>     粤ICP备20041389号-1</div>
+</div>
+<script type="text/javascript">
+    $(".newC").height($(".introNews").height() - 130 + "px");
+</script>
+<script>
+    var page = 1;
+    var totalCount=0;
+    var cate =sessionStorage.getItem('token')
+    if(cate == null){
+        $("#login_register").css("display","block");
+        $("#user_center").css("display","none");
+    }else {
+        $("#user_center").css("display","block");
+        $("#login_register").css("display","none");
+        $("#uusername").append(sessionStorage.getItem('username'));
+        $("#usernamem").append(sessionStorage.getItem('username'));
+        $("#usernamemm").append(sessionStorage.getItem('username'));
+        ssearch();
+    }
+    $.ajax({
+        type: "Get",
+        url: config.base_url + "user_contactus",
+        xhrFields: {withCredentials: false},
+        dataType: "json",
+        success: function (data0) {
+            if (data0['code'] == 0) {
+                phone = data0['data']['phone'];
+                $("#phone").append(phone);
+                tel_kefu = data0['data']['tel_kefu'];
+                $("#tel_kefu").append(tel_kefu);
+                email = data0['data']['email'];
+                $("#email").append(email);
+            } else if (data0['code'] == 1) {
+                alert("未获取到token")
+            } else if (data0['code'] == 2) {
+                alert("操作失败，请重试")
+            }
+        },
+        error: function (data1) {
+            alert('异常错误');
+        }
+    });
+    $("#change").click(function() {
+        translate();
+    })
+    function login(){
+        var username = $("input[name='username']").val();
+        if (username==''){
+            alert('请输入账号');
+            return false;
+        }
+        var pwd = $("input[name='pwd']").val()
+        if(pwd==''){
+            alert('请输入密码');
+            return false;
+        }
+        $.ajax({
+            type:"Post",
+            url: config.base_url + "user/login",
+            xhrFields: {withCredentials: false},
+            // crossDomain:true,
+            data:{'username': username, 'pwd':pwd },
+            dataType:"json",
+            success:function(data0){
+                if(data0['code']==0){
+                    sessionStorage.setItem('token',data0["data"]['token'])
+                    sessionStorage.setItem('username',data0["data"]['username'])
+                    $("#user_center").css("display","block");
+                    $("#login_register").css("display","none");
+                    $("#uusername").append(sessionStorage.getItem('username'));
+                    $("#usernamem").append(sessionStorage.getItem('username'));
+                    $("#usernamemm").append(sessionStorage.getItem('username'));
+                    ssearch();
+                }else {
+                    alert('错误的用户名或密码');
+                }
+            },
+            error:function(data1){
+                alert('登录异常');
+            }
+        });
+    }
+    function register(){
+        var username1 = $("input[name='username1']").val();
+        if (username1==''){
+            alert('请输入账号');
+            return false;
+        }
+        var pwd1 = $("input[name='pwd1']").val()
+        if(pwd1==''){
+            alert('请输入密码');
+            return false;
+        }
+        var pwd2 = $("input[name='pwd2']").val()
+        if(pwd2==''){
+            alert('请输入确认密码');
+            return false;
+        }
+        if (pwd1!=pwd2){
+            alert('密码与确认密码不一致');
+            return false;
+        }
+        var email = $("input[name='email']").val()
+        if(email==''){
+            alert('请输入邮箱');
+            return false;
+        }
+        //验证邮箱
+        var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+        if(!reg.test(email))
+        {
+            alert("您输入的邮箱格式有误！");
+            return false;
+        }
+        $.ajax({
+            type:"Post",
+            url: config.base_url + "user",
+            xhrFields: {withCredentials: false},
+            // crossDomain:true,
+            data:{'username': username1, 'pwd': pwd1, 'email': email},
+            dataType:"json",
+            success:function(data0){
+                if(data0['code']==0){
+                    sessionStorage.setItem('token',data0["data"]['token'])
+                    sessionStorage.setItem('username',data0["data"]['username'])
+                    $("#user_center").css("display","block");
+                    $("#login_register").css("display","none");
+                    $("#uusername").append(sessionStorage.getItem('username'));
+                    $("#usernamem").append(sessionStorage.getItem('username'));
+                    $("#usernamemm").append(sessionStorage.getItem('username'));
+                    page = 1;
+                    totalCount = 0;
+                }
+                else if(data0['code']==2){
+                    alert('您的用户名已存在！')
+                }
+                else {
+                    alert('数据操作失败')
+                }
+            },
+            error:function(data1){
+                alert('注册异常');
+            }
+        });
+    }
+    function quit(){
+        $.ajax({
+            type:"Put",
+            url: config.base_url + "userToken",
+            xhrFields: {withCredentials: false},
+            // crossDomain:true,
+            data:{'token': sessionStorage.getItem('token')},
+            dataType:"json",
+            success:function(data0){
+                if(data0['code']==0){
+                    sessionStorage.clear()
+                    location.reload()
+                }else {
+                    alert('退出操作失败')
+                }
+            },
+            error:function(data1){
+                alert('退出异常');
+            }
+        });
+
+
+    }
+
+
+
+    $(".bgg").click(function () {
+        // $(this).addClass("bbgg");
+        // var $this = $(this);
+        // $this.css('backgroundColor', colorArr[count%2]);
+        console.log('改变背景色')
+        // $(this).siblings().css("background-color","#0186e4").end()
+        //     .css("background-color","white");
+
+    });
+    function toregister() {
+        $("#register").css("display","block");//显示
+        $("#login").css("display","none");//隐藏
+    }
+    function tologin() {
+        $("#register").css("display","none");//隐藏
+        $("#login").css("display","block");//显示
+    }
+    function setprice(member_type,data_price_week,data_price,data_price_quarter,data_price_half_a_year,data_id,idx,leth) {
+        if(member_type!='初级会员') {
+            $("#price").attr('price-id', data_id)
+            $("#price").attr('pprice', data_price)
+            $("#price").html(data_price)
+        }else {
+            $("#price").attr('price-id', data_id)
+            $("#price").attr('pprice', data_price)
+            $("#price").html(data_price_week)
+        }
+        if(member_type!='初级会员'){
+            $("#price2").css('visibility', 'visible')
+            $("#price22").css('visibility', 'visible')
+            $("#price222").css('visibility', 'visible')
+            $("#price_quarter").css('visibility', 'visible')
+            $("#price_quarter").attr('price-id',data_id)
+            $("#price_quarter").attr('pprice',data_price_quarter)
+            $("#price_quarter").html(data_price_quarter)
+            $("#price3").css('visibility', 'visible')
+            $("#price33").css('visibility', 'visible')
+            $("#price333").css('visibility', 'visible')
+            $("#price_half_a_year").css('visibility', 'visible')
+            $("#price_half_a_year").attr('price-id',data_id)
+            $("#price_half_a_year").attr('pprice',data_price_half_a_year)
+            $("#price_half_a_year").html(data_price_half_a_year)
+        }else {
+            $("#price2").css('visibility', 'hidden')
+            $("#price22").css('visibility', 'hidden')
+            $("#price222").css('visibility', 'hidden')
+            $("#price_quarter").css('visibility', 'hidden')
+            $("#price3").css('visibility', 'hidden')
+            $("#price33").css('visibility', 'hidden')
+            $("#price333").css('visibility', 'hidden')
+            $("#price_half_a_year").css('visibility', 'hidden')
+        }
+
+        for (i = 0; i< leth; i++){
+            if(i==idx){
+                document.getElementById('div_price_'+i).style.backgroundColor='#0186e4'
+            }else {
+                document.getElementById('div_price_'+i).style.backgroundColor='white'
+            }
+        }
+        // console.log(e.className)
+        // $(this).removeClass("bbgg1");
+        // $(this).addClass("bbgg");
+        // $(this).siblings().css("background-color","#0186e4").end()
+        //     .css("background-color","white");
+        console.log(idx)
+    }
+    function jump_to_alipay(){
+        pricep=0.00;
+        var pricechecked =$('input[name="price"]:checked').val();
+        console.log(pricechecked)
+        if (pricechecked=='1'){
+            pricep = $("#price").attr('pprice');
+        }
+        if (pricechecked=='2'){
+            pricep = $("#price_quarter").attr('pprice');
+        }
+        if (pricechecked=='3'){
+            pricep = $("#price_half_a_year").attr('pprice');
+        }
+        console.log(pricep)
+        // pricep=0.01
+        $.ajax({
+            type:"Post",
+            url: config.base_url + "order",
+            xhrFields: {withCredentials: false},
+            // crossDomain:true,
+            data:{'token': sessionStorage.getItem('token'), 'price_id': $("#price").attr('price-id'), 'pay_price': pricep, 'pay_way': 'ali'},
+            dataType:"json",
+            success:function(data0){
+                console.log(data0)
+                console.log(data0['res'])
+                console.log(data0['order_number'])
+                window.open(data0['pay_url'],"_blank")
+                $.ajax({
+                    type:"Post",
+                    url: config.base_url + "ordercheck",
+                    xhrFields: {withCredentials: false},
+                    // crossDomain:true,
+                    data:{'token': sessionStorage.getItem('token'), 'order_number': data0['order_number'], 'pay_way': data0['res']},
+                    dataType:"json",
+                    success:function(data00){
+                        console.log(data00)
+                    },
+                    error:function(data11){
+                        alert('执行错误'+data11);
+                    }
+                });
+            },
+            error:function(data1){
+                alert('执行错误111111111'+data1);
+            }
+        });
+
+    }
+    function order_reocrd1() {
+        var lang = localStorage.getItem('lang');
+        if (lang=='zh'){
+            $("#mmenu").html('充值记录')
+        }else
+        {
+            $("#mmenu").html('Recharge record')
+        }
+
+        $("#order_reocrd").css("display","block");//显示
+        $("#modifypwd").css("display","none");//隐藏
+        $("#recharge").css("display","none");//隐藏
+        $("#modifyemail").css("display","none");//隐藏
+        ssearch();
+    }
+    function add0(m){return m<10?'0'+m:m }
+    function format(shijianchuo)
+    {
+        //shijianchuo是整数，否则要parseInt转换
+        var time = new Date(shijianchuo);
+        var y = time.getFullYear();
+        var m = time.getMonth()+1;
+        var d = time.getDate();
+        var h = time.getHours();
+        var mm = time.getMinutes();
+        var s = time.getSeconds();
+        return y+'-'+add0(m)+'-'+add0(d)+' '+add0(h)+':'+add0(mm)+':'+add0(s);
+    }
+    function ssearch() {
+        page = 1;
+        console.log('search');
+        console.log($("#pay_way").val());
+        console.log($("#status").val());
+        $.ajax({
+            type:"Post",
+            url: config.base_url + "user_orders",
+            xhrFields: {withCredentials: false},
+            // crossDomain:true,
+            data:{'token': sessionStorage.getItem('token'), 'page': page, 'limit': 10, 'start': $("#start").val(),
+                'end': $("#end").val(), 'username': '', 'pay_way': $("#pay_way").val(),
+                'status': $("#status").val(), 'order_number': $("#ordernumber").val()},
+            dataType:"json",
+            success:function(data0){
+                if(data0['code']==0){
+                    var lang = localStorage.getItem('lang');
+                    console.log(data0['data'])
+                    $("#order-data").empty()
+                    var appendhtml = ""
+                    appendhtml +='<tr style="background: #F0F4FB;height: 50px;">';
+                    if (lang=='zh'){
+                        appendhtml +='<th style="width: 10%;border: 1px solid #e8e8e8;">ID</th>';
+                    }else
+                    {
+                        appendhtml +='<th style="width: 10%;border: 1px solid #e8e8e8;">id</th>';
+                    }
+                    if (lang=='zh'){
+                        appendhtml +='<th class="lang" key="ORDER NUMBER" style="width: 20%;border: 1px solid #e8e8e8;">订单号</th>';
+                    }else
+                    {
+                        appendhtml +='<th class="lang" key="ORDER NUMBER" style="width: 20%;border: 1px solid #e8e8e8;">order number</th>';
+                    }
+                    if (lang=='zh'){
+                        appendhtml +='<th class="lang" key="AMOUNT" style="width: 10%;border: 1px solid #e8e8e8;">金额</th>';
+                    }else
+                    {
+                        appendhtml +='<th class="lang" key="AMOUNT" style="width: 10%;border: 1px solid #e8e8e8;">amount</th>';
+                    }
+                    if (lang=='zh'){
+                        appendhtml +='<th class="lang" key="PAYMENT METHOD" style="width: 10%;border: 1px solid #e8e8e8;">支付方式</th>';
+                    }else
+                    {
+                        appendhtml +='<th class="lang" key="PAYMENT METHOD" style="width: 10%;border: 1px solid #e8e8e8;">payment method</th>';
+                    }
+                    if (lang=='zh'){
+                        appendhtml +='<th class="lang" key="ORDER STATUS" style="width: 10%;border: 1px solid #e8e8e8;">订单状态</th>';
+                    }else
+                    {
+                        appendhtml +='<th class="lang" key="ORDER STATUS" style="width: 10%;border: 1px solid #e8e8e8;">order status</th>';
+                    }
+                    if (lang=='zh'){
+                        appendhtml +='<th class="lang" key="OPERATION TIME" style="width: 20%;border: 1px solid #e8e8e8;">操作时间</th>';
+                    }else
+                    {
+                        appendhtml +='<th class="lang" key="OPERATION TIME" style="width: 20%;border: 1px solid #e8e8e8;">operation time</th>';
+                    }
+                    if (lang=='zh'){
+                        appendhtml +='<th class="lang" key="TRADE NUMBER" style="width: 20%;border: 1px solid #e8e8e8;">交易单号</th>';
+                    }else
+                    {
+                        appendhtml +='<th class="lang" key="TRADE NUMBER" style="width: 20%;border: 1px solid #e8e8e8;">trade number</th>';
+                    }
+
+                    appendhtml +='</tr>';
+                    for (i = 0; i < data0['data'].length; i++) {
+                        appendhtml +='<tr style="height: 50px;">';
+                        appendhtml +='<td style="text-align: center;border: 1px solid #e8e8e8;">';
+                        appendhtml +=data0['data'][i]['id'];
+                        appendhtml +='</td>';
+                        appendhtml +='<td style="text-align: center;border: 1px solid #e8e8e8;">';
+                        if(data0['data'][i]['order_number']==null){
+                            appendhtml +='';
+                        }else {
+                            appendhtml +=data0['data'][i]['order_number'];
+                        }
+                        appendhtml +='</td>';
+                        appendhtml +='<td style="text-align: center;border: 1px solid #e8e8e8;">';
+                        appendhtml +=parseFloat(data0['data'][i]['pay_price'].toString());
+                        appendhtml +='</td>';
+                        appendhtml +='<td style="text-align: center;border: 1px solid #e8e8e8;">';
+                        if(data0['data'][i]['pay_way']=='ali'){
+                            appendhtml +='支付宝';
+                        }else if(data0['data'][i]['pay_way']=='wx'){
+                            appendhtml +='微信';
+                        }else if(data0['data'][i]['pay_way']=='paypal'){
+                            appendhtml +='Paypal';
+                        }
+                        appendhtml +='</td>';
+                        appendhtml +='<td style="text-align: center;border: 1px solid #e8e8e8;">';
+                        if(data0['data'][i]['status']=='0'){
+                            appendhtml +='未支付';
+                        }else {
+                            appendhtml +='已支付';
+                        }
+                        appendhtml +='</td>';
+                        appendhtml +='<td style="text-align: center;border: 1px solid #e8e8e8;">';
+                        appendhtml +=format(parseInt(data0['data'][i]['pay_time']*1000));
+                        appendhtml +='</td>';
+                        appendhtml +='<td style="text-align: center;border: 1px solid #e8e8e8;">';
+                        if(data0['data'][i]['trade_no']==null){
+                            appendhtml +='';
+                        }else {
+                            appendhtml +=data0['data'][i]['trade_no'];
+                        }
+                        appendhtml +='</td>';
+                        appendhtml +='</tr>'
+                    }
+                    $("#order-data").append(appendhtml)
+                    $("#page-set").empty()
+                    totalCount = Math.ceil(parseInt(data0['count'])/10)
+                    var pagesets ="";
+                    pagesets += '<a class="next" href="javascript:;" onclick="setpagechange('+(page-1)+')"><</a>'
+                    for (i = 0; i< totalCount; i++){
+                        if (page==i+1){
+                            pagesets += '<a class="cur" href="javascript:;">'+page+'</a>';
+                        }else{
+                            pagesets += '<a href="javascript:;" onclick="setpagechange('+ (i+1) +')">'+(i+1)+'</a>';
+                        }
+                    }
+                    pagesets += '<a class="next" href="javascript:;" onclick="setpagechange('+(page+1)+')">></a>'
+                    $("#page-set").append(pagesets)
+                }else{
+                    console.log(data0['msg'])
+                }
+            },
+            error:function(data1){
+                console.log(data1)
+            }
+        });
+    }
+    function setpagechange(newpage) {
+        if (newpage>0&& newpage<totalCount+1){
+            page=newpage;
+            ssearch()
+        }
+    }
+    function recharge1() {
+        var lang = localStorage.getItem('lang');
+        if (lang=='zh'){
+            $("#mmenu").html('会员充值')
+        }else
+        {
+            $("#mmenu").html('Member recharge')
+        }
+        $("#order_reocrd").css("display","none");//隐藏
+
+        $("#modifypwd").css("display","none");//隐藏
+
+        $("#recharge").css("display","block");//显示
+
+        $("#modifyemail").css("display","none");//隐藏
+        $.ajax({
+            type: "Post",
+            url: config.base_url + "priceDictCurrentList",
+            xhrFields: {withCredentials: false},
+            data:{'token':sessionStorage.getItem('token')},
+            dataType: "json",
+            success: function (data0) {
+                if (data0['code'] == 0) {
+                    var lang = localStorage.getItem('lang');
+                    console.log(data0['data']);
+                    $("#price-list").empty()
+                    var appendhtml = ""
+                    for (i = 0; i < data0['data'].length; i++) {
+                        if(i==0) {
+                            appendhtml +='<div class="bgg bbgg" id="div_price_'+i+'" onclick="setprice('+"'"+ data0['data'][i]['member_type']+"'"+','+ data0['data'][i]['price_week']+','+ data0['data'][i]['price']+','+ data0['data'][i]['price_quarter']+','+ data0['data'][i]['price_half_a_year']+','+ data0['data'][i]['id'] +',' + i + ','+data0['data'].length+')">';
+                        }else {
+                            appendhtml +='<div class="bgg bbgg1" id="div_price_'+i +'" onclick="setprice('+"'"+ data0['data'][i]['member_type']+"'"+','+ data0['data'][i]['price_week']+','+ data0['data'][i]['price']+','+ data0['data'][i]['price_quarter']+','+ data0['data'][i]['price_half_a_year']+','+ data0['data'][i]['id'] +',' + i +','+data0['data'].length+')">';
+                        }
+                        appendhtml +='<div style="text-align: center;font-size: 18px">'+ data0['data'][i]['member_type']+'</div>';
+
+                        if(data0['data'][i]['member_type']!='初级会员'){
+                            appendhtml +='<div style="text-align: center;font-size: 16px;margin-top: 10px;">';
+                            appendhtml +='<span>￥' + data0['data'][i]['price']+'</span>';
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="YUAN">元</span>';
+                            }else
+                            {
+                                appendhtml +='<span class="lang" key="YUAN">Yuan</span>';
+                            }
+
+                            appendhtml +='<span>/30</span>';
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="DAY">天</span>';
+                            }else
+                            {
+                                appendhtml +='<span class="lang" key="DAY">day</span>';
+                            }
+                            appendhtml +='<br>'
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="IP_ALL"> IP总数：'+data0['data'][i]['ip_count']*30+'</span>';
+                            }
+                            else {
+                                appendhtml +='<span class="lang" key="IP_ALL"> Total IP：'+data0['data'][i]['ip_count']*30+'</span>';
+                            }
+                            appendhtml +='</div>'
+                            appendhtml +='<div style="text-align: center;font-size: 16px;margin-top: 10px;">';
+                            appendhtml +='<span>￥' + data0['data'][i]['price_quarter']+'</span>';
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="YUAN">元</span>';
+                            }else
+                            {
+                                appendhtml +='<span class="lang" key="YUAN">Yuan</span>';
+                            }
+
+                            appendhtml +='<span>/90</span>';
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="DAY">天</span>';
+                            }else
+                            {
+                                appendhtml +='<span class="lang" key="DAY">day</span>';
+                            }
+                            appendhtml +='<br>'
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="IP_ALL"> IP总数：'+data0['data'][i]['ip_count']*90+'</span>';
+                            }
+                            else {
+                                appendhtml +='<span class="lang" key="IP_ALL"> Total IP：'+data0['data'][i]['ip_count']*90+'</span>';
+                            }
+                            appendhtml +='</div>'
+                            appendhtml +='<div style="text-align: center;font-size: 16px;margin-top: 10px;">';
+                            appendhtml +='<span>￥' + data0['data'][i]['price_half_a_year']+'</span>';
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="YUAN">元</span>';
+                            }else
+                            {
+                                appendhtml +='<span class="lang" key="YUAN">Yuan</span>';
+                            }
+
+                            appendhtml +='<span>/180</span>';
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="DAY">天</span>';
+                            }else
+                            {
+                                appendhtml +='<span class="lang" key="DAY">day</span>';
+                            }
+                            appendhtml +='<br>'
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="IP_ALL"> IP总数：'+data0['data'][i]['ip_count']*180+'</span>';
+                            }
+                            else {
+                                appendhtml +='<span class="lang" key="IP_ALL"> Total IP：'+data0['data'][i]['ip_count']*180+'</span>';
+                            }
+                            appendhtml +='</div>'
+                        }
+                        else {
+                            appendhtml +='<div style="text-align: center;font-size: 16px;margin-top: 10px;">';
+                            appendhtml +='<span>￥' + data0['data'][i]['price_week']+'</span>';
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="YUAN">元</span>';
+                            }else
+                            {
+                                appendhtml +='<span class="lang" key="YUAN">Yuan</span>';
+                            }
+
+                            appendhtml +='<span>/7</span>';
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="DAY">天</span>';
+                            }else
+                            {
+                                appendhtml +='<span class="lang" key="DAY">day</span>';
+                            }
+                            appendhtml +='</div>'
+                            appendhtml +='<div style="text-align: center;font-size: 16px;margin-top: 78px;">';
+                            appendhtml +='</div>'
+                            if (lang=='zh') {
+                                appendhtml += '<div class="lang" key="FUNCTION" style="text-align: center;font-size: 16px;margin-top: 10px;"><span>功能：</span>';
+                            }else
+                            {
+                                appendhtml += '<div class="lang" key="FUNCTION" style="text-align: center;font-size: 16px;margin-top: 10px;"><span>function:</span>';
+                            }
+                            appendhtml +='</div>';
+                            appendhtml +='<div style="text-align: center;font-size: 16px;margin-top: 10px;">';
+                            if (lang=='zh'){
+                                appendhtml +='<span class="lang" key="IP_COUNT">每天可调用IP个数：</span>';
+                            }else
+                            {
+                                appendhtml +='<span class="lang" key="IP_COUNT">Number of IP calls per day:</span>';
+                            }
+                            appendhtml +='<span>'+ data0['data'][i]['ip_count'] + '</span>';
+                            appendhtml +='</div>';
+                        }
+                        appendhtml +='</div>';
+                    }
+                    // console.log(appendhtml);
+                    $("#price-list").append(appendhtml)
+                    if(data0['data'][0]['member_type']!='初级会员') {
+                        $("#price").attr('price-id',data0['data'][0]['id'])
+                        $("#price").attr('pprice',data0['data'][0]['price'])
+                        $("#price").append(data0['data'][0]['price'])
+                    }else {
+                        $("#price").attr('price-id',data0['data'][0]['id'])
+                        $("#price").attr('pprice',data0['data'][0]['price_week'])
+                        $("#price").append(data0['data'][0]['price_week'])
+                    }
+                    if(data0['data'][0]['member_type']!='初级会员') {
+                        $("#price2").css('visibility', 'visible')
+                        $("#price22").css('visibility', 'visible')
+                        $("#price222").css('visibility', 'visible')
+                        $("#price_quarter").css('visibility', 'visible')
+                        $("#price_quarter").attr('price-id', data0['data'][0]['id'])
+                        $("#price_quarter").attr('pprice', data0['data'][0]['price_quarter'])
+                        $("#price_quarter").html(data0['data'][0]['price_quarter'])
+                        $("#price3").css('visibility', 'visible')
+                        $("#price33").css('visibility', 'visible')
+                        $("#price333").css('visibility', 'visible')
+                        $("#price_half_a_year").css('visibility', 'visible')
+                        $("#price_half_a_year").attr('price-id', data0['data'][0]['id'])
+                        $("#price_half_a_year").attr('pprice', data0['data'][0]['price_half_a_year'])
+                        $("#price_half_a_year").html(data0['data'][0]['price_half_a_year'])
+                    }else {
+                        $("#price2").css('visibility', 'hidden')
+                        $("#price22").css('visibility', 'hidden')
+                        $("#price222").css('visibility', 'hidden')
+                        $("#price_quarter").css('visibility', 'hidden')
+                        $("#price3").css('visibility', 'hidden')
+                        $("#price33").css('visibility', 'hidden')
+                        $("#price333").css('visibility', 'hidden')
+                        $("#price_half_a_year").css('visibility', 'hidden')
+                    }
+
+                } else if (data0['code'] == 1) {
+                    alert("未获取到token")
+                } else if (data0['code'] == 2) {
+                    alert("操作失败，请重试")
+                }
+            },
+            error: function (data1) {
+                alert('异常错误');
+            }
+        });
+    }
+    function modifypwd1() {
+        var lang = localStorage.getItem('lang');
+        if (lang=='zh'){
+            $("#mmenu").html('修改密码')
+        }else
+        {
+            $("#mmenu").html('Modify password')
+        }
+        $("#order_reocrd").css("display","none");//隐藏
+
+        $("#modifypwd").css("display","block");//显示
+
+        $("#recharge").css("display","none");//隐藏
+
+        $("#modifyemail").css("display","none");//隐藏
+    }
+
+    function modifyemail1() {
+        var lang = localStorage.getItem('lang');
+        if (lang=='zh'){
+            $("#mmenu").html('修改邮箱')
+        }else
+        {
+            $("#mmenu").html('Modify email')
+        }
+        $("#order_reocrd").css("display","none");//隐藏
+
+        $("#modifypwd").css("display","none");//隐藏
+
+        $("#recharge").css("display","none");//隐藏
+
+        $("#modifyemail").css("display","block");//显示
+    }
+
+    function modifypwd() {
+        var pwdd0 = $("#pwd-old").val();
+        if (pwdd0 == ''){
+            alert('请输入原密码');
+            return false;
+        }
+        var pwdd = $("#pwdd").val();
+        if (pwdd == ''){
+            alert('请输入新密码');
+            return false;
+        }
+        var pwdd1 = $("#pwdd1").val();
+        if (pwdd1 == ''){
+            alert('请输入确认新密码');
+            return false;
+        }
+        if (pwdd == pwdd1){
+            $.ajax({
+                type:"Put",
+                url: config.base_url + "user",
+                xhrFields: {withCredentials: false},
+                // crossDomain:true,
+                data:{'token': sessionStorage.getItem('token'), 'pwd_old': pwdd0, 'pwd': pwdd1, 'oper_type': 'pwd'},
+                dataType:"json",
+                success:function(data0){
+                    if(data0['code']==0){
+                        alert("修改成功")
+                        sessionStorage.clear()
+                        location.reload()
+                    }else if(data0['code']==1) {
+                        console.log(data0['msg'])
+                        if (data0['msg'].indexOf('error') > 0){
+                            alert("原密码错误")
+                        }else {
+                            alert('修改失败');
+                        }
+                    }
+                },
+                error:function(data1){
+                    alert('修改密码异常');
+                }
+            });
+        }else {
+            alert('请确保新密码跟确认新密码一致！');
+        }
+    }
+
+    function modifyemail() {
+        var email = $("#eemail").val()
+        if(email==''){
+            alert('请输入邮箱');
+            return false;
+        }
+        //验证邮箱
+        var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+        if(!reg.test(email))
+        {
+            alert("您输入的邮箱格式有误！");
+            return false;
+        }
+        $.ajax({
+            type:"Put",
+            url: config.base_url + "user",
+            xhrFields: {withCredentials: false},
+            // crossDomain:true,
+            data:{'token': sessionStorage.getItem('token'), 'email': email, 'oper_type': 'email'},
+            dataType:"json",
+            success:function(data0){
+                if(data0['code']==0){
+                    alert("修改成功")
+                }else if(data0['code']==1) {
+                    alert('修改失败');
+                }
+            },
+            error:function(data1){
+                alert('修改邮箱异常');
+            }
+        });
+    }
+</script>
+<script src="js/lang.js"></script>
+</body>
+</html>

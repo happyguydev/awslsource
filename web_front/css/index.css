@@ -1,0 +1,879 @@
+
+/*header 
+    最新最全最好的Bootstrap模板：http://www.bootstrapmb.com
+*/
+.headerWrap{
+	width: 100%;
+	height: auto;
+	min-width: 1200px;
+}
+.header{
+	height: auto;
+}
+/*logo*/
+.logo{
+	width: 180px;
+	height: auto;
+	padding: 20px 0;
+}
+.logo img{
+	display: block;
+	width: 100%;
+}
+/*nav*/
+.nav{
+	margin-top: 29px;
+}
+.nav ul li{
+	width: 105px;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	text-align: center;
+	margin-left: 50px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+}
+.nav ul li a{
+	display: block;
+	font-size: 16px;
+	color: #505050;
+}
+.nav ul li a:hover{
+	color: #0296ff;
+}
+.nav ul li.cur{
+	border: 1px solid #0296FF;
+}
+/*banner*/
+.slideBox {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+.slideBox .hd {
+	width: 84px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -42px;
+	bottom: 20px;
+	z-index: 1;
+}
+.slideBox .hd ul {
+	float: left;
+	width: 100%;
+	height: auto;
+	zoom: 1;
+	text-align: center;
+}
+.slideBox .hd ul li {
+	float: left;
+	margin: 0 10px;
+	width: 6px;
+	height: 6px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	cursor: pointer;
+}
+.slideBox .hd ul li.on {
+	background: #0296ff;
+	border:1px solid #0296ff
+}
+.slideBox .bd {
+	height: 100%;
+	z-index: 0;
+}
+.slideBox .bd li {
+	zoom: 1;
+	vertical-align: middle;
+	position: relative;
+}
+.slideBox .bd li .slideImg{
+	width: 100%;
+	height: auto;
+}
+.slideBox .bd li .slideImg img {
+	width: 100%;
+	display: block;
+}
+.slideBox .bd li .slideText{
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -600px;
+	text-align: center;
+}
+.slideBox .bd li .slideText h2{
+	height: 68px;
+	line-height: 68px;
+	font-size: 20px;
+	color: #0296ff;
+	font-weight: bold;
+	margin-top: 94px;
+}
+.slideBox .bd li .slideText p{
+	font-size: 16px;
+	color: #fff;
+	line-height: 30px;
+}
+.slideBox .bd li .slideText a{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 12px;
+	height: 30px;
+	line-height: 30px;
+	background: #0296ff;
+	border-radius: 50px;
+	margin-top: 30px;
+}
+.slideBox .bd li .slideText a:hover{
+	background: #fff;
+	color: #0296ff;
+}
+/*前/后按钮*/
+.slideBox .menu{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -12px;
+	margin-left: -600px;
+	
+}
+.slideBox .prev,
+.slideBox .next {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 26px;
+	height: 25px;
+	background: url(../img/prve.png) no-repeat;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+.slideBox .next {
+	left: auto;
+	right: 0;
+	background-position: right 0;
+}
+.slideBox .prev:hover{
+	background-position: 0 bottom;
+}
+.slideBox .next:hover{
+	background-position: right bottom;
+}
+/*公司简介*/
+.introWrap{
+	width: 100%;
+	height: auto;
+	padding-top: 30px;
+	margin-top: 48px;
+}
+.introTitle{
+	width: 100%;
+	height: 57px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.introTitle h2{
+	position: relative;
+	width: 1200px;
+	height: 56px;
+	line-height: 56px;
+	margin: 0 auto;
+}
+.introTitle h2 em{
+	font-size: 16px;
+	color: #505050;
+}
+.introTitle h2 b{
+	font-size: 14px;
+	color: #9b9b9b;
+	font-weight: normal;
+}
+.introTitle h2 span{
+	display: inline-block;
+	width: 100px;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	top: 56px;
+	background: #0296ff;
+}
+.introBom{
+	height: auto;
+	margin-top: 52px;
+}
+.introBom h2{
+	width: 100%;
+	height: auto;
+}
+.introBom h2 img{
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 5px 8px #cfcfcf;
+}
+.introBom p{
+	width: 100%;
+	margin-top: 42px;
+	text-align: center;
+	font-size: 14px;
+	color: #9b9b9b;
+	line-height: 30px;
+}
+.introBom h3{
+	width: 100%;
+	text-align: center;
+	margin: 40px 0 100px;
+}
+.introBom h3 a{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 25px;
+	height: 30px;
+	line-height: 30px;
+	background: #0296ff;
+	border-radius: 50px;
+}
+.introBom h3 a:hover{
+	background: #0186e4;
+}
+/*业务范围*/
+.introWrap1{
+	background: #fcfcfc;
+	margin-top: 0;
+}
+.introWrap1 .introBom1{
+	margin-top: 200px;
+	height: auto;
+}
+.introBback{
+	width: 100%;
+	height: 258px;
+	background: url(../temp/img2.jpg) center no-repeat;
+	position: relative;
+}
+.introBback .introBList{
+	position: absolute;
+	left: 50%;
+	margin-left: -600px;
+	bottom: 83px;
+}
+.introBback .introBList ul{
+	width: 1281px;
+	height: auto;
+}
+.introBback ul li{
+	float: left;
+	width: 239px;
+	height: auto;
+	margin-right: 81px;
+	box-shadow: 3px 3px 10px rgba(218,218,218,0.7);
+	background: url(../img/ico_btn.png) repeat;
+}
+.introBback ul li .introPic{
+	width: 100%;
+	height: auto;
+}
+.introBback ul li .introPic img{
+	display: block;
+	width: 100%;
+}
+.introBback ul li .introText{
+	width: 168px;
+	height: auto;
+	margin: 0 auto;
+}
+.introBback ul li .introText p{
+	font-size: 14px;
+	color: #505050;
+	line-height: 24px;
+	margin-top: 6px;
+}
+.introBback ul li .introText h2{
+	text-align: center;
+	margin: 14px 0 12px;
+}
+.introBback ul li .introText h2 a,
+.introCase ul li .caseText h2 a,
+.introNews .newL .newMain .newB h4 a,
+.introNews h1 a{
+	display: inline-block;
+	width: 105px;
+	height: 28px;
+	border: 1px solid #0296ff;
+	border-radius: 50px;
+	line-height: 28px;
+	text-align: center;
+	font-size: 14px;
+	color: #0296ff;
+}
+.introBback ul li:hover .introText h2 a,
+.introCase ul li:hover .caseText h2 a,
+.introNews h1 a:hover{
+	background: #0296ff;
+	color: #fff;
+}
+/*典型案例*/
+.introCase{
+	height: auto;
+}
+.introCase ul{
+	float: left;
+	width: 1245px;
+	height: auto;
+	padding-top: 25px;
+}
+.introCase ul li{
+	width: 370px;
+	height: auto;
+	float: left;
+	margin-right: 45px;
+}
+.introCase ul li h3{
+	width: 100%;
+	font-size: 16px;
+	color: #404040;
+	line-height: 60px;
+}
+.introCase ul li .caseImg{
+	width: 100%;
+	height: auto;
+}
+.introCase ul li .caseImg img{
+	display: block;
+	width: 100%;
+	box-shadow: 3px 3px 8px #d4d4d4;
+}
+.introCase ul li .caseText{
+	width: 100%;
+	height: auto;
+}
+.introCase ul li .caseText p{
+	width: 100%;
+	font-size: 14px;
+	color: #9b9b9b;
+	line-height: 30px;
+	margin-top: 22px;
+}
+.introCase ul li .caseText h2{
+	text-align: center;
+	margin-top: 20px;
+}
+/*公司新闻*/
+.introNews{
+	height: auto;
+	margin-top: 50px;
+}
+.introNews .newL{
+	width: 599px;
+	height: auto;
+	padding-top: 140px;
+}
+.introNews .newC{
+	width: 1px;
+	height: auto;
+	background: #ececec;
+	margin-top: 94px;
+}
+.introNews .newR{
+	padding-top: 0;
+	width: 534px;
+}
+.introNews .newL .newMain{
+	width: 532px;
+	height: auto;
+	border: 1px solid #ececec;
+	border-bottom: none;
+	padding-top: 35px;
+	margin-bottom: 40px;
+}
+.introNews .newL .newMain h2{
+	width: 57%;
+	height: auto;
+	font-size: 16px;
+	color: #505050;
+	text-align: center;
+	line-height: 38px;
+	margin: 0 auto;
+}
+.introNews .newL .newMain p{
+	width: 62%;
+	height: auto;
+	font-size: 14px;
+	color: #9b9b9b;
+	line-height: 30px;
+	margin: 0 auto;
+}
+.introNews .newL .newMain .newB{
+	position: relative;
+	width: 534px;
+	height: auto;
+	background: #454444;
+	margin-left: -1px;
+	margin-top: 42px;
+}
+.introNews .newL .newMain .newB h3{
+	width: auto;
+	height: auto;
+	float: left;
+	padding: 14px 0 8px 30px;
+}
+.introNews .newL .newMain .newB h3 em{
+	display: block;
+	height: 24px;
+	font-size: 16px;
+	color: #fff;
+	line-height: 24px;
+}
+.introNews .newL .newMain .newB h3 span{
+	display: block;
+	height: 20px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 20px;
+}
+.introNews .newL .newMain .newB h4{
+	width: auto;
+	float: right;
+	padding-top: 19px;
+	padding-right: 30px;
+}
+.introNews .newL .newMain .newB h4 a{
+	background: #0296ff;
+	color: #fff;
+}
+.introNews .newL .newMain .newB i{
+	position: absolute;
+	right: -70px;
+	top: 50%;
+	margin-top: -9px;
+	width: 70px;
+	height: 21px;
+	background: url(../img/ico_btn1.png) no-repeat;
+}
+.introNews .newR .newMain .newB i{
+	left: -70px;
+	background: url(../img/ico_btn1.png) right 0 no-repeat;
+}
+.introNews .newL .newMain:hover .newB{
+	background: #0296ff;
+}
+.introNews .newL .newMain:hover .newB h4 a{
+	background: #fff;
+	border: 1px solid #fff;
+	color: #0296ff;
+}
+.introNews .newL .newMain:hover .newB i{
+	background-position: 0 bottom ;
+}
+.introNews .newR .newMain:hover .newB i{
+	background-position: right bottom ;
+}
+.introNews h1{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: center;
+	margin-top: 50px;
+}
+/*footer*/
+.footerWrap{
+	width: 100%;
+	height: 320px;
+	background: url(../temp/img8.jpg) center no-repeat;
+	margin-top: 50px;
+}
+.footerWrap1{
+	margin-top: 0;
+}
+.footer{
+	height: auto;
+}
+.footer .fooL{
+	width: 338px;
+	height: auto;
+	border-right: 1px solid #494848;
+	margin-top: 30px;
+}
+.footer .fooL h2{
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 12px;
+}
+.footer .fooL h2 em{
+	display: inline-block;
+	width: 110px;
+	text-align: center;
+	background: #0296ff;
+	margin-right: 17px;
+}
+.footer .fooL p{
+	font-size: 14px;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+}
+.footer .fooL p em b{
+	display:inline-block;
+	width: 2em;
+}
+.footer .fooR{
+	width: 780px;
+	padding-top: 10px;
+}
+.footer .fooR h2{
+	width: 100%;
+	line-height: 30px;
+	border-bottom: 1px solid #626262;
+	margin-top: 12px;
+	float: left;
+	font-size: 12px;
+	color: #fff;
+}
+.footer .fooR h2 label{
+	float: left;
+}
+.footer .fooR h2 .fooText{
+	width: 700px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	background: none;
+	color: #fff;
+}
+.footer .fooR h2 textarea{
+	width: 700px;
+	float: left;
+	resize: none;
+	height: 54px;
+	padding: 7px 0;
+	background: none;
+	overflow: hidden;
+	color: #fff;
+}
+.footer .fooR h3{
+	float: left;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 32px;
+}
+.footer .fooR h3 input{
+	background: #0296ff;
+	width: 105px;
+	height: 28px;
+	border: 1px solid #0296ff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+	-moz-transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+.footer .fooR h3 input:hover{
+	background: #fff;
+	color: #0296ff;
+}
+.footerB{
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	height: 42px;
+	line-height: 42px;
+	border-top: 1px solid #494848;
+	margin-top: 40px;
+}
+/*典型案例*/
+.mainCaseWrap{
+	width: 100%;
+	height: auto;
+}
+.mainCase{
+	height: auto;
+}
+.mainCase .caseTitle{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #e5e5e5;
+	padding-top: 25px;
+}
+.mainCase .caseTitle h2{
+	width: 1160px;
+	padding-left: 40px;
+	height: 32px;
+	line-height: 32px;
+	background: url(../img/ico_btn2.png) 12px center no-repeat;
+	font-size: 14px;
+	color: #505050;
+}
+.mainCase .caseBom{
+	width: 1118px;
+	height: auto;
+	margin: 12px auto 0;
+}
+.mainCase .caseBom h2{
+	font-size: 18px;
+	color: #505050;
+	text-align: center;
+	line-height: 34px;
+}
+.mainCase .caseBom h3,
+.mainCase .caseBom h4{
+	font-size: 14px;
+	color: #505050;
+	line-height: 30px;
+}
+.mainCase .caseBom p,
+.mainCase .caseBom1 h6 em,
+.mainCase .newsList ul li .newsR p{
+	font-size: 14px;
+	color: #9b9b9b;
+	line-height: 30px;
+	text-indent: 2em;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+.mainCase .caseBom h1{
+	margin: 25px 0;
+}
+.mainCase .caseBom h1 img{
+	width: 497px;
+	display: block;
+}
+.mainCase .caseBom h4{
+	text-indent: 2em;
+}
+.mainC1{
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #e5e5e5;
+	margin-top: 40px;
+}
+.mainC1 h2{
+	width: 1200px;
+	margin: 0 auto;
+	height: 72px;
+	line-height: 72px;
+}
+.mainC1 h2 a{
+	font-size: 14px;
+	color: #0296ff;
+}
+.mainC1 h2 a b{
+	font-weight: normal;
+	font: 400 16px/72px consolas;
+	letter-spacing: -4px;
+	margin-left: 7px;
+}
+.mainC1 h2 a:hover{
+	color: #007ed8;
+}
+/*典型案例-列表页*/
+.mainCase .introCase ul{
+	padding-top: 10px;
+}
+.mainCase .introCase ul li{
+	margin-top: 15px;
+}
+.mainC1 h3{
+	width: 1200px;
+	margin: 0 auto;
+	height: 110px;
+	line-height: 110px;
+	text-align: center;
+}
+.mainC1 h3 a{
+	font-size: 14px;
+	color: #9b9b9b;
+	margin: 0 15px;
+}
+.mainC1 h3 a:hover,
+.mainC1 h3 a.cur{
+	color: #0296ff;
+}
+.mainC1 h3 a.next{
+	font: 400 16px consolas;
+}
+/*公司简介*/
+.mainCase .caseBom1 p{
+	margin-top: 30px;
+}
+.mainCase .caseBom1 h6{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+}
+.mainCase .caseBom1 h6 img{
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 5px 8px #cfcfcf;
+}
+.mainCase .caseBom1 h6 em{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+}
+/*公司新闻*/
+.mainCase .newsList{
+	width: 100%;
+	height: auto;
+}
+.mainCase .newsList ul li{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	float: left;
+	-moz-transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+.mainCase .newsList ul li .newsL{
+	width: 204px;
+	height: 140px;
+	font-size: 18px;
+	color: #fff;
+	background: #0296ff;
+	text-align: center;
+	line-height: 140px;
+}
+.mainCase .newsList ul li .newsR{
+	width: 882px;
+	height: 122px;
+	border: 1px solid #e5e5e5;
+	border-left: none;
+	padding: 16px 63px 0 50px;
+}
+.mainCase .newsList ul li .newsR h2{
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+}
+.mainCase .newsList ul li .newsR h2 a{
+	color: #505050;
+}
+.mainCase .newsList ul li .newsR h2 a:hover{
+	color: #0296FF;
+}
+.mainCase .newsList ul li .newsR p{
+	text-indent: 0;
+	margin-top: 14px;
+}
+.mainCase .newsList ul li:hover{
+	background: #fcfcfc;
+}
+.mainCase .newsList ul li:hover .newsR h2 a{
+	color: #0296FF;
+}
+/*公司新闻-内容页*/
+.mainCase .caseBomN h2{
+	margin-top: 30px;
+}
+.mainCase .caseBomN p{
+	text-indent: 0;
+}
+.mainCase .caseBomN h5{
+	font-size: 12px;
+	color: #9b9b9b;
+	text-align: center;
+}
+.mainCase .caseBomN h5 em{
+	margin: 0 11px;
+}
+.mainC1 .newContent{
+	height: auto;
+}
+.mainC1 .newContent h4{
+	width:1118px;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	margin: 20px auto 0;
+}
+.mainC1 .newContent h4 a{
+	color: #505050;
+}
+.mainC1 .newContent h4 a.cur,
+.mainC1 .newContent h4 a:hover{
+	color: #0296FF;
+}
+/*业务范围*/
+.mainCase .business{
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+.mainCase .business .businessL{
+	width: 236px;
+	height: auto;
+}
+.mainCase .business .businessL h2{
+	font-size: 18px;
+	color: #fff;
+	height: 52px;
+	line-height: 52px;
+	background: #0296FF;
+	text-align: center;
+}
+.mainCase .business .businessL .businessLMain{
+	width: 176px;
+	padding: 15px 30px;
+	background: #fcfcfc;
+}
+.mainCase .business .businessL .businessLMain h3{
+	font-size: 14px;
+	height: 44px;
+	line-height: 44px;
+}
+.mainCase .business .businessL .businessLMain h3 a{
+	color: #505050;
+}
+.mainCase .business .businessL .businessLMain h3 a:hover,
+.mainCase .business .businessL .businessLMain h3.cur a{
+	color: #0296FF;
+}
+.mainCase .business .businessR{
+	width: 912px;
+	height: auto;
+}
+.mainCase .business .businessR p,
+.mainCase .business .businessR h2{
+	font-size: 14px;
+	color: #505050;
+	text-indent: 2em;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+.mainCase .business .businessR h2{
+	text-indent: 0;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
